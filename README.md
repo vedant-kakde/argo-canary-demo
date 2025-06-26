@@ -126,14 +126,22 @@ You’ll see: `"Hello from v1"` or `"🚀 Hello from v2 – New Features!"`
 > - Initial rollout
 <img alt="Screenshot-1" src="https://github.com/user-attachments/assets/cbb385d6-b008-4cfd-a30c-e83b8ea4b1eb" />
 <img alt="Screenshot-2" src="https://github.com/user-attachments/assets/4dab3da4-9b20-4be3-aafd-dc832b5d1a9d" />
+
+
 > - Rollout v2
 <img alt="Screenshot-3" src="https://github.com/user-attachments/assets/b1dd0638-33e2-44f1-8d97-4d50fe1a5295" />
 <img alt="Screenshot-4" src="https://github.com/user-attachments/assets/5b0c6fc2-143e-46c0-96cf-0ad9854529f7" />
 <img alt="Screenshot-5" src="https://github.com/user-attachments/assets/61cdc017-6fea-4636-85ad-2256b39b69b3" />
+
+
 > - Events
 <img alt="Screenshot-6" src="https://github.com/user-attachments/assets/ccd79409-626e-4c94-aa8f-68c89d735dfe" />
+
+
 > - Promotion steps + Failure + rollback
 <img alt="Screenshot-7" src="https://github.com/user-attachments/assets/06a38a9c-b90c-4f8d-bd11-3414ff5a581f" />
+
+
 > - Health check endpoint
 <img alt="Screenshot-8" src="https://github.com/user-attachments/assets/eee0688c-3229-4dd1-9d74-1aac7d6d3913" />
 
