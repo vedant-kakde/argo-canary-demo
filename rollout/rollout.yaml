@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: fastapi-rollout
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fastapi-app
+  template:
+    metadata:
+      labels:
+        app: fastapi-app
+    spec:
+      containers:
+        - name: fastapi-container
+          image: vedantkakde/fastapi-app:v1
+          env:
+            - name: APP_VERSION
+              value: "v1"
+          ports:
+            - containerPort: 8000
+  strategy:
+    canary:
+      canaryService: fastapi-app-canary-service
+      stableService: fastapi-app-stable-service
+      trafficRouting:
+        nginx:
+          stableIngress: fastapi-app-ingress
+      steps:
+        - setWeight: 5
+        - pause: {} # Manual approval required
+        - setWeight: 25
+        - pause: {} # Manual approval required
+        - setWeight: 50
+        - pause: {} # Manual approval required
+        - setWeight: 100
