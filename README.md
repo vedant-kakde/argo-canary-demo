@@ -108,10 +108,8 @@ kubectl argo rollouts abort fastapi-rollout
 
 ---
 
-## 📊 Observability & Health Checks
+## 📊 Health Checks
 - `/health` → readiness probe
-- `/metrics` (on port 8001) → Prometheus metrics
-- `http_requests_total{version=...}` → visible traffic by version
 
 ---
 
