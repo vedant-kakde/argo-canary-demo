@@ -117,7 +117,7 @@ kubectl argo rollouts abort fastapi-rollout
 ```bash
 curl -s http://<INGRESS-IP>/
 ```
-You’ll see: `"Hello from v1"` or `"Hello from v2"`
+You’ll see: `"Hello from v1"` or `"🚀 Hello from v2 – New Features!"`
 
 ---
 
