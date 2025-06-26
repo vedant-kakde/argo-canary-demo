@@ -2,6 +2,7 @@
 
 This project demonstrates a **canary deployment strategy** using **Argo Rollouts** with a simple **FastAPI** application. It includes:
 - Manual promotion at each stage
+- Health check endpoints (/health)
 
 ---
 
