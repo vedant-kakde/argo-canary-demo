@@ -81,23 +81,23 @@ image: fastapi-app:v1
 ### Upgrade to v2
 
 ```bash
-kubectl edit rollout fastapi-rollot #update env var and image tag to v2
+kubectl edit rollout fastapi-rollout #update env var and image tag to v2
 ```
 This triggers the 4-phase rollout (5% → 25% → 50% → 100%).
 
 ### Watch Rollout:
 ```bash
-kubectl argo rollouts get rollout fastapi-rollout -n canary-demo --watch
+kubectl argo rollouts get rollout fastapi-rollout --watch
 ```
 
 ### Promote Rollout Step-by-Step:
 ```bash
-kubectl argo rollouts promote fastapi-rollout -n canary-demo
+kubectl argo rollouts promote fastapi-rollout
 ```
 
 ### Abort and Rollback:
 ```bash
-kubectl argo rollouts abort fastapi-rollout -n canary-demo
+kubectl argo rollouts abort fastapi-rollout
 ```
 
 ### Automated Demo:
